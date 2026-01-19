@@ -3,7 +3,7 @@ SYSTEM Launchpad is a sovereign Canadian Agentic OS that automates post‑meetin
 
 
 # SYSTEM LAUNCHPAD
-Software Requirements Specification (SRS)
+Software Requirements Specification (SRS) <br>
 Version: 1.0 – Based on Master Blueprint v8.0
 Date: January 19, 2026
 Owner: Hakeem – Founder, SYSTEM Launchpad
