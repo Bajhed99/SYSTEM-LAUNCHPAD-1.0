@@ -4,11 +4,11 @@ SYSTEM Launchpad is a sovereign Canadian Agentic OS that automates post‑meetin
 
 # SYSTEM LAUNCHPAD
 Software Requirements Specification (SRS) <br>
-Version: 1.0 – Based on Master Blueprint v8.0
-Date: January 19, 2026
-Owner: Hakeem – Founder, SYSTEM Launchpad
-Lead Developer: Jhed Serrano
-Prepared by: SYSTEM Launchpad Project Team
+Version: 1.0 – Based on Master Blueprint v8.0 <br>
+Date: January 19, 2026 <br>
+Owner: Hakeem – Founder, SYSTEM Launchpad <br>
+Lead Developer: Jhed Serrano <br>
+Prepared by: SYSTEM Launchpad Project Team <br>
 
 EXECUTIVE SUMMARY
 SYSTEM Launchpad is a Platform‑Agnostic Sovereign Agentic Operating System designed to automate post‑meeting workflows and deliver CFO‑level business intelligence to Canadian professionals. The platform centers on a 6‑TOOL Loop that allows users to “vibe operate” their business—dispatching AI agents that transform conversations into structured actions, financial insights, and CRM updates.
