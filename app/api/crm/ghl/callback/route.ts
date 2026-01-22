@@ -11,13 +11,15 @@ export async function GET(request: Request) {
     const code = searchParams.get('code')
     const locationId = searchParams.get('locationId')
 
+    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+    
     if (!code || !locationId) {
-      return NextResponse.redirect('/dashboard?error=ghl_auth_failed')
+      return NextResponse.redirect(`${baseUrl}/dashboard?error=ghl_auth_failed`)
     }
 
     const org = await getCurrentOrganization()
     if (!org) {
-      return NextResponse.redirect('/auth/login')
+      return NextResponse.redirect(`${baseUrl}/auth/login`)
     }
 
     // Exchange code for tokens
@@ -36,7 +38,7 @@ export async function GET(request: Request) {
     })
 
     if (!tokenResponse.ok) {
-      return NextResponse.redirect('/dashboard?error=ghl_token_exchange_failed')
+      return NextResponse.redirect(`${baseUrl}/dashboard?error=ghl_token_exchange_failed`)
     }
 
     const tokenData = await tokenResponse.json()
@@ -75,12 +77,13 @@ export async function GET(request: Request) {
 
     if (insertError) {
       console.error('GHL connection save error:', insertError)
-      return NextResponse.redirect('/dashboard?error=ghl_save_failed')
+      return NextResponse.redirect(`${baseUrl}/dashboard?error=ghl_save_failed`)
     }
 
-    return NextResponse.redirect('/dashboard?success=ghl_connected')
+    return NextResponse.redirect(`${baseUrl}/dashboard?success=ghl_connected`)
   } catch (error) {
     console.error('GHL callback error:', error)
-    return NextResponse.redirect('/dashboard?error=ghl_callback_failed')
+    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'
+    return NextResponse.redirect(`${baseUrl}/dashboard?error=ghl_callback_failed`)
   }
 }

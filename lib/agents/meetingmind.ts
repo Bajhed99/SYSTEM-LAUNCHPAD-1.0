@@ -25,12 +25,12 @@ export class MeetingMindAgent extends BaseAgent {
 
   async execute(context: AgentContext): Promise<AgentResult<MeetingMindResult>> {
     if (!this.validateContext(context)) {
-      return this.error('Invalid context')
+      return this.error('Invalid context') as AgentResult<MeetingMindResult>
     }
 
     const { meetingId } = context.metadata || {}
     if (!meetingId || typeof meetingId !== 'string') {
-      return this.error('Meeting ID required')
+      return this.error('Meeting ID required') as AgentResult<MeetingMindResult>
     }
 
     try {
@@ -45,7 +45,7 @@ export class MeetingMindAgent extends BaseAgent {
         .single()
 
       if (transcriptError || !transcript) {
-        return this.error('Transcript not found')
+        return this.error('Transcript not found') as AgentResult<MeetingMindResult>
       }
 
       // Call DeepSeek-V3 for action item extraction
@@ -107,7 +107,7 @@ export class MeetingMindAgent extends BaseAgent {
       )
     } catch (error) {
       console.error('MeetingMind agent error:', error)
-      return this.error(error instanceof Error ? error.message : 'Unknown error')
+      return this.error(error instanceof Error ? error.message : 'Unknown error') as AgentResult<MeetingMindResult>
     }
   }
 
