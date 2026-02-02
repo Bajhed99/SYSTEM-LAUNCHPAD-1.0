@@ -1,178 +1,184 @@
-## SYSTEM-LAUNCHPAD-1.0
-SYSTEM Launchpad is a sovereign Canadian Agentic OS that automates post‑meeting workflows using DeepSeek‑V3, Voxtral transcription and n8n playbooks. Platform‑agnostic integration with GHL/CRMs, PIPEDA‑ready architecture, ISAIC hosting, vector memory via Engram, delivering CFO‑level insights and action artifacts. Sovereign, platform CRM sync.
+# SYSTEM Launchpad  
+**Sovereign Agentic Intelligence OS for Business Conversations**
 
+SYSTEM Launchpad is a **100% Canadian-sovereign, agentic intelligence platform** that transforms meetings into actionable, predictive business intelligence.  
+It delivers **Gong-level (and beyond) reasoning at a fraction of the cost**, while guaranteeing that **data never leaves Canada**.
 
-# SYSTEM Launchpad – Sovereign Agentic OS
-SYSTEM Launchpad is a platform‑agnostic, Canadian‑sovereign Agentic Operating System that automates the entire post‑meeting workflow and delivers CFO‑level business intelligence for professional service firms.
+---
 
-Built on DeepSeek‑V3, Voxtral transcription, Engram memory, and n8n automation, the platform transforms conversations into structured actions, CRM updates, financial insights, and intelligent playbooks—while keeping all sensitive data 100% within Canada.
+## 🚀 Vision
 
-### 🎯 Core Value Proposition – The 6‑TOOL Loop
-SYSTEM Launchpad operates through an integrated 6‑TOOL Manager Surface where users "vibe operate" their business by dispatching intelligent agents:
+Build a **Platform-Agnostic Sovereign Agentic OS** for Canadian professionals, starting with the **GoHighLevel (GHL)** ecosystem.
 
-- **Unified AI Command Center** – single dashboard for metrics, queries, and agent routing
-- **MeetingMind AI Assistant** – sovereign recording, transcription, action extraction
-- **ClientPulse** – sentiment & client health scoring (MVP: Stub)
-- **RevenueRadar** – CFO‑level forecasting & alerts (MVP: Stub)
-- **SYSTEM Intelligence Hub** – vector memory & pattern discovery (MVP: Stub)
-- **Business Playbooks** – n8n automation to CRM (GHL first)
+SYSTEM Launchpad sits between:
+- ❌ Expensive, legacy enterprise tools (Gong)
+- ❌ Low-intelligence transcription tools (Fireflies)
 
-🇨🇦 Sovereign Architecture
-| Layer | Technology | Location |
-|-------|-----------|----------|
-| Reasoning AI | DeepSeek‑V3 + Engram | ISAIC – Edmonton |
-| Transcription | Voxtral Mini 3B | ISAIC – Edmonton |
-| Vector DB | Qdrant | ISAIC – Edmonton |
-| Storage | S3‑Compatible | ISAIC – Alberta |
-| Database/Auth | Supabase (PG) | Canada Central |
-| Frontend | Next.js 14 / Tailwind | Canada Central |
-| Automation | n8n | ISAIC – Edmonton |
+…and captures the gap with **true generative reasoning**, deep automation, and strict data sovereignty.
 
-**Compliance:** PIPEDA Audit‑Ready • Canadian Data Residency • HECVAT Path
+---
 
-### 🧠 What the System Produces
-- Structured action items (JSON)
-- CRM tasks & notes (GHL module)
-- Client health scorecards
-- Cash‑flow forecasts
-- Proposal drafts
-- Automated follow‑ups
-- Market intelligence cards
+## 🧠 Core Value Proposition: The 6-TOOL Loop
 
-🛠 Tech Stack
-- **Frontend:** Next.js 14, TypeScript, Tailwind
-- **Backend:** Supabase, Edge Functions, Node
-- **AI:** DeepSeek‑V3, Engram, Voxtral
-- **Automation:** n8n
-- **Memory:** Qdrant
-- **Payments:** Stripe
-- **CRM:** GoHighLevel (MVP), HubSpot/Salesforce (roadmap)
+SYSTEM Launchpad converts unstructured conversation into autonomous action.
 
-### 📦 Getting Started
+| # | Tool | Function |
+|---|------|---------|
+| 1 | **MeetingMind** | Record, transcribe, and diarize meetings |
+| 2 | **ClientPulse** | Sentiment analysis and client health scoring |
+| 3 | **ActionExtractor** | Extract tasks, owners, and deadlines |
+| 4 | **RevenueRadar** | Detect financial signals and forecast revenue |
+| 5 | **IntelligenceHub** | Cross-meeting pattern recognition |
+| 6 | **PlaybookEngine** | Automate post-meeting workflows (GHL, email, CRM) |
 
-1. **Clone and Install**
-```bash
-git clone https://github.com/your-org/system-launchpad.git
-cd system-launchpad
-npm install
-```
+This enables **“Vibe Operating”**: users delegate analysis and operations to intelligent agents, not rigid automations.
 
-2. **Configure Environment**
-```bash
-cp .env.example .env
-# Edit .env with your credentials
-```
+---
 
-3. **Set Up Supabase**
-- Create a new Supabase project (Canada Central region)
-- Run migrations:
-```bash
-supabase migration up
-```
-- Create storage bucket `meeting-audio` with public access
-- Deploy Edge Functions:
-```bash
-supabase functions deploy transcribe-meeting
-supabase functions deploy meetingmind-agent
-```
+## 🏆 Competitive Advantage
 
-4. **Run Development Server**
-```bash
-npm run dev
-```
+### Why SYSTEM Launchpad Wins
 
-### 🧩 Integrations
+| Feature | Gong | Fireflies | SYSTEM Launchpad |
+|------|------|-----------|------------------|
+| Reasoning | Keyword trackers | Basic NLP | **Generative AI (GPT-OSS)** |
+| Intelligence | Meeting-level | Transcription | **Deal + cross-meeting** |
+| CRM Updates | Manual | Generic | **Fully automated (GHL)** |
+| Forecasting | Requires Clari | None | **Built-in RevenueRadar** |
+| Cost | $400–$500/user | $10–$39/user | **Flat-rate, 50× cheaper** |
+| Data Residency | U.S. only | U.S. only | **100% Canadian** |
 
-#### GoHighLevel (MVP)
-- OAuth-based connection
-- Task creation
-- Note syncing
-- Automatic retry on failure
+**Our moat**  
+- Intelligence quality  
+- Cost efficiency  
+- Canadian data sovereignty  
+- Deep GoHighLevel integration  
 
-#### HubSpot / Salesforce (Roadmap)
-- Platform-agnostic adapter pattern ready
-- OAuth integration pending
+---
 
-#### QuickBooks / Xero (Roadmap)
-- Unified API integration pending
+## 🇨🇦 Data Sovereignty (Non-Negotiable)
 
-### 🗺 MVP Scope (9‑Week Timeline)
+All compute, storage, and AI reasoning stay on **Canadian soil**.
 
-**Week 1–2:** Core infra + waitlist ✅
-- Database schema + RLS
-- Auth + multi-tenancy
-- Basic UI scaffold
+- PIPEDA-aligned
+- Audit-ready
+- No U.S. cloud processing
+- No foreign data exposure
 
-**Week 3–5:** MeetingMind & analysis ✅
-- Audio upload
-- Voxtral transcription
-- Action item extraction
-- Agent abstraction layer
+---
 
-**Week 6–8:** GHL playbooks ✅
-- OAuth integration
-- Task/note sync
-- n8n webhook triggers
-- Playbook execution tracking
+## 🏗️ Technical Architecture
 
-**Week 9:** Launch & revenue ✅
-- Stripe billing integration
-- Access gating
-- Production hardening
+### Sovereign AI Stack
 
-### 🏗 Architecture Highlights
+| Component | Technology | Location |
+|---------|------------|----------|
+| Frontend | Next.js 14 | Canada Central |
+| Database & Auth | Supabase (Postgres, RLS) | Canada Central |
+| Reasoning (MVP) | GPT-OSS-20B | ISAIC, Edmonton |
+| Reasoning (Advanced) | GPT-OSS-120B | ISAIC, Edmonton |
+| Transcription | Voxtral Mini 3B | ISAIC |
+| Vector Memory | Qdrant | ISAIC |
+| Automation | n8n | ISAIC |
 
-#### Agent Abstraction Layer
-All agents implement the `Agent` interface for consistent orchestration:
-```typescript
-interface Agent {
-  name: string
-  execute(context: AgentContext): Promise<AgentResult>
-}
-```
+> ⚠️ All Chinese-origin models are **explicitly excluded** by design.
 
-#### CRM Adapter Pattern
-Platform-agnostic CRM integration:
-```typescript
-interface CrmAdapter {
-  createTask(connection: CrmConnection, task: CrmTask): Promise<{id: string}>
-  createNote(connection: CrmConnection, note: CrmNote): Promise<{id: string}>
-}
-```
+---
 
-#### Row Level Security (RLS)
-All database queries are tenant-scoped via Supabase RLS policies. No cross-tenant data leakage possible.
+## 🔌 Model Context Protocol (MCP)
 
-### 🔒 Security & Compliance
+SYSTEM Launchpad uses **MCP servers** to connect reasoning models to tools **without data leakage**.
 
-- **Data Residency:** All data stored in Canada (Supabase ca-central-1, ISAIC Edmonton)
-- **PIPEDA Compliance:** Audit-ready logging, explicit consent, data minimization
-- **RLS Enforcement:** Tenant isolation at database level
-- **OAuth Security:** Secure token storage, automatic refresh
-- **Audit Logging:** All actions logged for compliance review
+- **Qdrant MCP** – semantic memory and cross-meeting intelligence  
+- **PostgreSQL MCP** – schema-aware structured reasoning  
+- **n8n MCP** – dynamic workflow execution  
+- **MindsDB MCP (Phase 3)** – predictive intelligence  
 
-### 📄 Environment Variables
+---
 
-See `.env.example` for required configuration:
-- Supabase credentials
-- Stripe keys
-- GHL OAuth credentials
-- AI service endpoints (ISAIC)
-- n8n webhook URLs
+## 🧩 Production-Grade RAG Architecture
 
-### 🤝 Contributing
-SYSTEM Launchpad follows an AI‑first development model with human‑in‑the‑loop review.
+### Hybrid Retrieval
+- Vector search (Qdrant)
+- Keyword search (PostgreSQL BM25)
+- Reciprocal Rank Fusion
+- GPT-OSS cross-encoder reranking
 
-1. Create feature branch
-2. Follow sovereign data rules
-3. PR reviewed by JHED/Agent Zero
-4. Security & RLS audit
+> Improves recall accuracy by **1–9%** vs vector-only RAG.
 
-### 📄 License
-Proprietary – SYSTEM Launchpad
-Canadian Sovereign Software
+### Dual Pipeline
+- **Offline**: ingestion, chunking, embedding, indexing  
+- **Online**: retrieval, reranking, reasoning, response
 
-### 🌐 Vision
-"Stop playing part‑time CFO. Operate your business through agents."
+### Semantic Caching
+- Up to **68.8% LLM cost reduction**
+- Sub-100ms responses for repeated queries
 
-SYSTEM Launchpad turns conversations into execution—securely, autonomously, and on Canadian soil.
+---
+
+## 🛣️ Intelligence Roadmap
+
+### Stage 1: Sovereign MVP (Weeks 1–9)
+- GPT-OSS-20B
+- Hybrid RAG
+- Core MCP servers
+- Basic 6-TOOL Loop
+
+**Goal:** Launch, validate, onboard 50 Founding Members
+
+---
+
+### Stage 2: Advanced Intelligence (Weeks 10–18)
+- GPT-OSS-120B
+- MindsDB MCP
+- Semantic caching
+- CFO-level forecasting
+
+**Goal:** Directly challenge Gong
+
+---
+
+### Stage 3: Autonomous Intelligence (Weeks 19+)
+- Fine-tuned GPT-OSS-7B
+- Data flywheel
+- Autonomous research agents
+- Self-improving intelligence
+
+**Goal:** Market leadership
+
+---
+
+## 💰 Pricing Strategy
+
+| Tier | Price | Target |
+|----|------|--------|
+| Founding Member | $97 | First 50 early adopters |
+| Starter | $197 | Small agencies |
+| Professional | $397 | Established agencies |
+| Enterprise | $797 | High-volume teams |
+
+---
+
+## 🎯 Mission Statement
+
+> **SYSTEM Launchpad delivers world-class business intelligence with zero compromise on sovereignty.**
+
+The sovereignty moat protects our position.  
+The intelligence quality wins the market.
+
+---
+
+## 📄 Status
+
+🚧 Active Development  
+🎯 MVP Target: 9 weeks  
+🇨🇦 Sovereign by design  
+
+---
+
+## 📜 License
+
+Apache 2.0 (Open-Source Friendly, Sovereignty-Aligned)
+
+---
+
