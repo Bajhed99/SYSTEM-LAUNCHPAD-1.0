@@ -20,7 +20,7 @@ export default function SignupForm() {
 
     try {
       const supabase = createClient()
-      
+
       // Sign up user
       const { data: authData, error: signUpError } = await supabase.auth.signUp({
         email,
@@ -51,7 +51,8 @@ export default function SignupForm() {
         .single()
 
       if (orgError || !orgData) {
-        setError('Failed to create organization')
+        console.error('Organization creation error:', orgError)
+        setError(`Failed to create organization: ${orgError?.message || 'Unknown error'}`)
         setLoading(false)
         return
       }
@@ -68,7 +69,8 @@ export default function SignupForm() {
         })
 
       if (profileError) {
-        setError('Failed to create user profile')
+        console.error('Profile creation error:', profileError)
+        setError(`Failed to create user profile: ${profileError.message}`)
         setLoading(false)
         return
       }
@@ -76,7 +78,8 @@ export default function SignupForm() {
       router.push('/dashboard')
       router.refresh()
     } catch (err) {
-      setError('An unexpected error occurred')
+      console.error('Signup error:', err)
+      setError(err instanceof Error ? err.message : 'An unexpected error occurred')
       setLoading(false)
     }
   }
