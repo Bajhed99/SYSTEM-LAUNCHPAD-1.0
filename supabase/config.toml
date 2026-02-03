@@ -132,4 +132,4 @@ enabled = true
 policy = "oneshot"
 # Configure one of the supported import maps: `bundled`, `import_map`.
 # Use `bundled` for Deno compatibility, or `import_map` for browser compatibility.
-import_map = "import_map.json"
+# import_map = "import_map.json"

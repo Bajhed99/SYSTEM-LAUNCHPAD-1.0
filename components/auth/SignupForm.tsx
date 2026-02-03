@@ -34,9 +34,18 @@ export default function SignupForm() {
       }
 
       if (!authData.user) {
+        console.error('Signup failed: No user returned', authData)
         setError('Failed to create user')
         setLoading(false)
         return
+      }
+
+      console.log('Signup successful, User:', authData.user.id)
+      console.log('Session present:', !!authData.session)
+
+      if (!authData.session) {
+        console.warn('No session returned after signup. Email confirmation might be required.')
+        // If we proceed, RLS will fail because we are acting as 'anon'
       }
 
       // Create organization
